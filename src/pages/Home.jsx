@@ -1,15 +1,13 @@
+import Navbar from "../components/navbar/Navbar";
+import Hero from "../components/hero/Hero";
+
 const Home = () => {
   return (
-    <main className="p-10">
-      <h1 className="text-2xl font-semibold">
-        Tailwind v4 Portfolio Base Ready
-      </h1>
-
-      <p className="mt-4 text-[var(--color-muted)]">
-        Dark theme working correctly.
-      </p>
-    </main>
-  );
-};
+    <>
+    <Navbar/>
+    <Hero/>
+    </>
+  )
+}
 
 export default Home;
