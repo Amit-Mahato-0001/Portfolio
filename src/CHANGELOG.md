@@ -1,6 +1,6 @@
-## Portfolio Updates (2)
+## Portfolio Updates (3)
 
 ### Added
-- Added work data source for project listings
-- Implemented reusable `WorkCard` component for displaying projects
-- Added `WorkSection` to render portfolio projects dynamically
+- Added experiments data source for showcasing side projects
+- Implemented reusable `ExperimentCard` component
+- Added `ExperimentsSection` to display experiments dynamically

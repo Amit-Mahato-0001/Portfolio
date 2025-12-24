@@ -1,14 +1,14 @@
-export const WORK_PROJECTS = [
+export const EXPERIMENTS = [
     {
-        id: "work01",
-        title: "Work 01",
+        id: "experiment01",
+        title: "Experiment 01",
         description: "Coming soon...",
         image: "/images/pic-1.jpg",
         href: "#",
     },
     {
-        id: "work02",
-        title: "Work 02",
+        id: "experiment02",
+        title: "Experiment 02",
         description: "Coming soon...",
         image: "/images/pic-1.jpg",
         href: "#",
