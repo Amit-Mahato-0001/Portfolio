@@ -1,7 +1,6 @@
-## Portfolio Updates (1)
+## Portfolio Updates (2)
 
 ### Added
-- Added reusable `NavItem` component for navigation links
-- Implemented responsive `Navbar` with left branding and right navigation items
-- Added hero section introducing name and role
-- Established initial landing layout structure
+- Added work data source for project listings
+- Implemented reusable `WorkCard` component for displaying projects
+- Added `WorkSection` to render portfolio projects dynamically
