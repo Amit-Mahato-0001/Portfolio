@@ -1,6 +1,4 @@
-## Portfolio Updates (3)
+## Portfolio Updates (4)
 
 ### Added
-- Added experiments data source for showcasing side projects
-- Implemented reusable `ExperimentCard` component
-- Added `ExperimentsSection` to display experiments dynamically
+- Added footer with contact and social links
