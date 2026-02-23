@@ -1,4 +1,12 @@
-export const WORK_PROJECTS = [
+export interface WorkProject {
+    id: string;
+    title: string;
+    description: string;
+    image: string;
+    href: string;
+}
+
+export const WORK_PROJECTS: WorkProject[] = [
     {
         id: "work01",
         title: "Work 01",

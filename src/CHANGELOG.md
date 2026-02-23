@@ -1,4 +1,4 @@
-## Portfolio Updates (4)
+## Portfolio Updates (5)
 
-### Added
-- Added footer with contact and social links
+### Update
+- Switched from normal js to ts 

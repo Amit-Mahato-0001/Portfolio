@@ -1,4 +1,4 @@
-import ExperimentCard from "./experimentCard";;
+import ExperimentCard from "./ExperimentCard";
 import { EXPERIMENTS } from "./experiments.data";
 
 const ExperimentsSection = () => {

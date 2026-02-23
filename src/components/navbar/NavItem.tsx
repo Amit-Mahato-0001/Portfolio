@@ -1,4 +1,9 @@
-const NavItem = ({ label, href }) => {
+interface NavItemProps {
+    label: string;
+    href: string;
+}
+
+const NavItem = ({ label, href }: NavItemProps) => {
 
     return(
         <a

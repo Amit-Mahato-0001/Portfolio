@@ -1,4 +1,12 @@
-export const EXPERIMENTS = [
+export interface Experiment {
+    id: string;
+    title: string;
+    description: string;
+    image: string;
+    href: string;
+}
+
+export const EXPERIMENTS: Experiment[] = [
     {
         id: "experiment01",
         title: "Experiment 01",

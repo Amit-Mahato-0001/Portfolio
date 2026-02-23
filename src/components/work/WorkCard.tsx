@@ -1,4 +1,10 @@
-const WorkCard = ({ project }) => {
+import { WorkProject } from "./work.data";
+
+interface WorkCardProps {
+    project: WorkProject;
+}
+
+const WorkCard = ({ project }: WorkCardProps) => {
     const { title, description, image, href } = project;
 
     return(

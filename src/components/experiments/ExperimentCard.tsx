@@ -1,4 +1,10 @@
-const ExperimentCard = ({ experiment }) => {
+import { Experiment } from "./experiments.data";
+
+interface ExperimentCardProps {
+    experiment: Experiment;
+}
+
+const ExperimentCard = ({ experiment }: ExperimentCardProps) => {
     const { title, description, image, href } = experiment;
 
     return(

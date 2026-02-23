@@ -17,12 +17,12 @@ const Footer = () => {
                         </a>
                         <a 
                         href="https://github.com/Amit-Mahato-0001"
-                        className="text-var[(--color-muted)] hover:text-[var(--color-foreground)] transition">
+                        className="text-[var(--color-muted)] hover:text-[var(--color-foreground)] transition">
                             Github
                         </a>
                         <a 
                         href="https://www.linkedin.com/in/amit-kumar-mahato-529b2531b"
-                        className="text-var[(--color-muted)] hover:text-[var(--color-foreground)] transition">
+                        className="text-[var(--color-muted)] hover:text-[var(--color-foreground)] transition">
                             LinkedIn
                         </a>
                     </div>
