@@ -7,8 +7,10 @@ interface MainLayoutProps {
 const MainLayout = ({ children }: MainLayoutProps) => {
 
     return(
-        <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-foreground)]">
-            {children}
+        <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-foreground)] flex justify-center">
+            <div className="max-w-[45vw]">
+                {children}
+            </div>
         </div>
     )
 };
