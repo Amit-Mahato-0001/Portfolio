@@ -9,9 +9,9 @@ export interface Experiment {
 export const EXPERIMENTS: Experiment[] = [
     {
         id: "experiment01",
-        title: "Experiment 01",
-        description: "Coming soon...",
-        image: "/images/pic-1.jpg",
+        title: "Api Scaling",
+        description: "Conducted structured performance benchmarking using Autocannon to evaluate API throughput under artificial latency, rate limiting, Redis caching, and Node.js clustering scenarios, improving throughput from ~9 requests/sec (1-second I/O delay) to ~9,700 requests/sec via Redis caching and multi-core clustering, and demonstrating latency’s impact on scalability while validating caching effectiveness in masking slow I/O operations.",
+        image: "/images/Scaling.png",
         href: "#",
     },
     {

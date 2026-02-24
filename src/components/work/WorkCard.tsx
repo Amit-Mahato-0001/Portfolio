@@ -24,11 +24,11 @@ const WorkCard = ({ project }: WorkCardProps) => {
             </div>
 
             {/* Image*/}
-            <div className="overflow-hidden rounded-lg">
+            <div className="overflow-hidden rounded-lg aspect-[16/9]">
                 <img 
                 src={image}
                 alt={title}
-                className="w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]" />
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]" />
             </div>
         </a>
     )
