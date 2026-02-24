@@ -14,7 +14,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-6">
                     <NavItem label="Work" href="#work"/>
                     <NavItem label="About" href="#about"/>
-                    <NavItem label="Resume" href="/resume.pdf"/>
+                    <NavItem label="Resume" href="./src/assets/resume.pdf"/>
                 </div>
             </div>
         </nav>
