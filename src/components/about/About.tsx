@@ -1,8 +1,8 @@
 const AboutSection = () => {
 
   return(
-        <section className="flex min-h-[60vh] items-center">
-            <div className="mx-auto max-w-6xl px-4 flex flex-col items-center gap-10">
+        <section className="flex min-h-[60vh] items-center border-y border-neutral-800">
+            <div className="mx-auto max-w-6xl px-4 flex flex-col items-center gap-10 ">
 
                 <img src="/public/images/Amit.jpg" className="rounded-full object-cover cover-left h-50 w-50 grayscale" />
 

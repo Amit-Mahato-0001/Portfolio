@@ -3,7 +3,7 @@ import ColorBends from "../ColorBends";
 const Hero = () => {
 
     return(
-        <section className="relative flex min-h-[50vh] items-center">
+        <section className="relative flex min-h-[50vh] items-center border-y border-neutral-800">
 
             <div className="absolute inset-0">
                 <ColorBends

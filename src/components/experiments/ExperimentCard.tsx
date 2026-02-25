@@ -22,7 +22,7 @@ const ExperimentCard = ({ experiment }: ExperimentCardProps) => {
             </div>
 
             {/* Image */}
-            <div className="overflow-hidden rounded-md aspect-[16/9]">
+            <div className="overflow-hidden aspect-[16/9]">
                 <img 
                 src={image}
                 alt={title}

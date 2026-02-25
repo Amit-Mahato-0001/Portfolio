@@ -8,8 +8,10 @@ const MainLayout = ({ children }: MainLayoutProps) => {
 
     return(
         <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-foreground)] flex justify-center">
-            <div className="max-w-[45vw]">
-                {children}
+            <div className="mx-auto max-w-[45vw] border-x border-neutral-800">
+                <div className="border-y border-neutral-800">
+                    {children}
+                </div>
             </div>
         </div>
     )
