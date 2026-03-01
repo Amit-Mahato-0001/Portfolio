@@ -4,15 +4,14 @@ import { WORK_PROJECTS } from "./work.data";
 const WorkSection = () => {
 
     return(
-        <section id="work" className="py-12">
-            <div className="mx-auto max-w-6xl px-4 border-y border-neutral-800">
-                {/* Section title */}
-                <h2 className="mb-12 text-sm font-medium uppercase tracking-widest text-[var(--color-muted)] ">
+        <section id="work" >
+            <div className="mx-auto max-w-6xl">
+                
+                <h2 className="py-6 text-sm font-medium border-y border-white/10 px-4 uppercase tracking-widest text-[var(--color-muted)] ">
                     Work
                 </h2>
 
-                {/* Work List */}
-                <div className="space-y-24">
+                <div className="space-y-12 px-4 py-6">
                     {WORK_PROJECTS.map((project) => (
                         <WorkCard
                         key={project.id}

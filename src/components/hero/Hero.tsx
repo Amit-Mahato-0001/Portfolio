@@ -3,7 +3,7 @@ import ColorBends from "../ColorBends";
 const Hero = () => {
 
     return(
-        <section className="relative flex min-h-[50vh] items-center border-y border-neutral-800">
+        <section className="relative flex min-h-[50dvh] items-center px-4">
 
             <div className="absolute inset-0">
                 <ColorBends
@@ -22,8 +22,8 @@ const Hero = () => {
             </div>
 
 
-            <div className="mx-auto max-w-6xl px-4 relative z-10">
-                <p className="mb-4 text-sm text-[var(--color-muted)]">
+            <div className="mx-auto max-w-6xl relative z-10">
+                <p className="mb-2 text-sm text-[var(--color-muted)]">
                     Namaste, I'm Amit Kr. Mahato.
                 </p>
 

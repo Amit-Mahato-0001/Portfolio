@@ -1,4 +1,5 @@
 import { useState } from "react";
+import MainLayout from "../layouts/MainLayout";
 import Navbar from "../components/navbar/Navbar";
 import Hero from "../components/hero/Hero";
 import WorkSection from "../components/work/WorkSection";
@@ -9,30 +10,26 @@ import Footer from "../components/footer/Footer";
 type ViewType = "home" | "about";
 
 const Home = () => {
-
-  //view sirf home ya about hoga
   const [view, setView] = useState<ViewType>("home");
 
   return (
-    <>
-      <header>
-        <Navbar setView={setView} />
-      </header>
+    <MainLayout>
 
-      <main>
-        {view === "home" && (
-          <>
-            <Hero />
-            <WorkSection />
-            <ExperimentsSection />
-          </>
-        )}
+      <Navbar setView={setView} />
 
-        {view === "about" && <About />}
-      </main>
+      {view === "home" && (
+        <>
+          <Hero />
+          <WorkSection />
+          <ExperimentsSection />
+        </>
+      )}
+
+      {view === "about" && <About />}
 
       <Footer />
-    </>
+
+    </MainLayout>
   );
 };
 

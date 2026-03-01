@@ -1,20 +1,17 @@
 import { ReactNode } from "react";
 
 interface MainLayoutProps {
-    children: ReactNode; //children prop koi v react renderable chiz ho skta he
+  children: ReactNode;
 }
 
 const MainLayout = ({ children }: MainLayoutProps) => {
-
-    return(
-        <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-foreground)] flex justify-center">
-            <div className="mx-auto max-w-[45vw] border-x border-neutral-800">
-                <div className="border-y border-neutral-800">
-                    {children}
-                </div>
-            </div>
-        </div>
-    )
+  return (
+    <div className="min-h-dvh bg-[var(--color-background)] text-[var(--color-foreground)] border-x border-white/10">
+      <div className="mx-auto max-w-4xl min-h-dvh ">
+        {children}
+      </div>
+    </div>
+  );
 };
 
 export default MainLayout;

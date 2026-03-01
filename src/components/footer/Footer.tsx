@@ -1,15 +1,14 @@
 const Footer = () => {
 
     return(
-        <footer className="py-16">
-            <div className="mx-auto max-w-6xl px-4">
+        <footer className="">
+            <div className="px-4 py-16 border-y border-white/10">
                 <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-                    {/* Left */}
+                    
                     <p className="text-sm text-[var(--color-muted)]">
                         © {new Date().getFullYear()} Amit Kr. Mahato
                     </p>
 
-                    {/* Right */}
                     <div className="flex items-center gap-6 text-sm">
                         <a href="amitmahatocky909@gmail.com"
                         className="text-[var(--color-muted)] hover:text-[var(--color-foreground)] transition">
