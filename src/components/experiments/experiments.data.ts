@@ -10,15 +10,8 @@ export const EXPERIMENTS: Experiment[] = [
     {
         id: "experiment01",
         title: "Api Scaling",
-        description: "Conducted structured performance benchmarking using Autocannon to evaluate API throughput under artificial latency, rate limiting, Redis caching, and Node.js clustering scenarios, improving throughput from ~9 requests/sec (1-second I/O delay) to ~9,700 requests/sec via Redis caching and multi-core clustering, and demonstrating latency’s impact on scalability while validating caching effectiveness in masking slow I/O operations.",
+        description: "Conducted performance benchmarking to optimize API throughput, improving request handling from 9 req/sec to 9,700+ req/sec through strategic caching and multi-core scaling.",
         image: "/images/Scaling.png",
-        href: "#",
-    },
-    {
-        id: "experiment02",
-        title: "Experiment 02",
-        description: "Coming soon...",
-        image: "/images/pic-1.jpg",
         href: "#",
     },
 ];

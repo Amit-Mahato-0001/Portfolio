@@ -11,7 +11,7 @@ const WorkCard = ({ project }: WorkCardProps) => {
         <a href={href}
         className="group block"
         >
-            {/* Text */}
+
             <div className="mb-4">
                 <h3 className="text-lg font-medium">
                     {title}
@@ -23,7 +23,6 @@ const WorkCard = ({ project }: WorkCardProps) => {
                 )}
             </div>
 
-            {/* Image*/}
             <div className="overflow-hidden aspect-[16/9]">
                 <img 
                 src={image}

@@ -18,7 +18,7 @@ export const WORK_PROJECTS: WorkProject[] = [
         id: "work02",
         title: "Pixelva",
         description: "A Chrome extension built with Manifest v3 that captures active tab screenshots and offers a sleek in-browser editor for quick, customizable visual enhancements.",
-        image: "/images/s.jpeg",
+        image: "/images/Pixelva.jpeg",
         href: "#",
     },
 ];
