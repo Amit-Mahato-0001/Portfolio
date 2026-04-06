@@ -11,18 +11,18 @@ const ExperimentCard = ({ experiment }: ExperimentCardProps) => {
         <a href={href} className="group block">
             {/* Text */}
             <div className="mb-3">
-                <h3 className="text-base font-medium">
+                <h3 className="text-lg font-medium">
                     {title}
                 </h3>
                 {description && (
-                    <p className="mt-1 text-sm text-[var(--color-muted)]">
+                    <p className="mt-1 text-lg text-[var(--color-muted)]">
                         {description}
                     </p>
                 )}
             </div>
 
             {/* Image */}
-            <div className="overflow-hidden aspect-[16/9]">
+            <div className="overflow-hidden aspect-[16/9] rounded-3xl">
                 <img 
                 src={image}
                 alt={title}

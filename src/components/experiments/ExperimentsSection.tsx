@@ -5,7 +5,7 @@ const ExperimentsSection = () => {
     return(
         <section >
             <div className="mx-auto max-w-6xl">
-                <h2 className="py-6 text-sm font-medium border-y border-white/10 px-4 uppercase tracking-widest text-[var(--color-muted)]">
+                <h2 className="px-4 py-6 text-lg font-medium uppercase tracking-widest text-[var(--color-muted)]">
                     Experiments
                 </h2>
 

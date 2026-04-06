@@ -17,13 +17,13 @@ const WorkCard = ({ project }: WorkCardProps) => {
                     {title}
                 </h3>
                 {description && (
-                    <p className="mt-1 text-sm text-[var(--color-muted)]">
+                    <p className="mt-1 text-lg text-[var(--color-muted)]">
                         {description}
                     </p>
                 )}
             </div>
 
-            <div className="overflow-hidden aspect-[16/9]">
+            <div className="overflow-hidden aspect-[16/9] rounded-3xl">
                 <img 
                 src={image}
                 alt={title}

@@ -10,15 +10,15 @@ export const WORK_PROJECTS: WorkProject[] = [
     {
         id: "work01",
         title: "ManageInSync",
-        description: "A secure multi-tenant SaaS platform built for modern tech agencies, enabling seamless team and client management with strict tenant isolation, powerful role-based access control, and frictionless email invitation based onboarding.",
+        description: "A multi-tenant SaaS platform for managing projects, teams, and operations with secure tenant isolation, RBAC, and JWT authentication, using React, Node.js, MongoDB, and Redis.",
         image: "/images/manageInSync.png",
-        href: "#",
+        href: "https://github.com/Amit-Mahato-0001/ManageInSync",
     },
     {
         id: "work02",
         title: "Pixelva",
-        description: "A Chrome extension built with Manifest v3 that captures active tab screenshots and offers a sleek in-browser editor for quick, customizable visual enhancements.",
-        image: "/images/Pixelva.jpeg",
-        href: "#",
+        description: "A Chrome extension for capturing, extracting, editing, and exporting web content directly from the browser using React, Tailwind, and Manifest v3, with support for screenshots, media assets, and multi-format export.",
+        image: "/images/Pixelva.png",
+        href: "https://microsoftedge.microsoft.com/addons/detail/ofhbnipkjmikfpfiggnllhfgadlpobnf",
     },
 ];

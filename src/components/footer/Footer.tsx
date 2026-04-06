@@ -2,14 +2,14 @@ const Footer = () => {
 
     return(
         <footer className="">
-            <div className="px-4 py-16 border-y border-white/10">
+            <div className="px-4 py-16">
                 <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
                     
-                    <p className="text-sm text-[var(--color-muted)]">
+                    <p className="text-lg text-[var(--color-muted)]">
                         © {new Date().getFullYear()} Amit Kr. Mahato
                     </p>
 
-                    <div className="flex items-center gap-6 text-sm">
+                    <div className="flex items-center gap-6 text-lg">
                         <a href="amitmahatocky909@gmail.com"
                         className="text-[var(--color-muted)] hover:text-[var(--color-foreground)] transition">
                             Email

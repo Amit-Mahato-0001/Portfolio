@@ -20,3 +20,16 @@ body {
   color: var(--color-foreground);
   font-family: 'Instrument Sans', sans-serif;
 }
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
