@@ -64,7 +64,7 @@ const Hero = () => {
                 <img
                   src={tech.icon}
                   alt={tech.name}
-                  className="h-10 w-10 object-contain"
+                  className="h-8 w-8 object-contain"
                 />
               </div>
 
