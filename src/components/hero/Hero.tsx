@@ -42,13 +42,12 @@ const Hero = () => {
           onMouseLeave={() => setIsHover(false)}
         />
 
-        <h1 className="text-2xl md:text-3xl">
+        <h1 className="text-lg md:text-xl font-bold">
           Namaste, I'm Amit Kr. Mahato.
         </h1>
 
-        <p className="mt-2 max-w-2xl text-lg leading-relaxed text-[var(--color-muted)]">
-          I build scalable full-stack applications with a strong focus on clean architecture,
-          modern frontend systems, secure backend workflows, and performance-driven user experiences.
+        <p className="mt-2 max-w-3xl text-lg leading-relaxed text-[var(--color-muted)]">
+          I engineer scalable and secure backend systems with Node.js and MongoDB, focusing on high-concurrency performance, multi-tenant architecture, and API reliability. I enhance system efficiency using Redis, caching, and clustering, while also building clean, responsive interfaces with React and Tailwind CSS.
         </p>
 
         <div className="mt-10 w-full overflow-hidden py-4">
