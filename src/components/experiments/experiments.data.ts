@@ -3,6 +3,7 @@ export interface Experiment {
     title: string;
     image: string;
     href: string;
+    ambient: string;
 }
 
 export const EXPERIMENTS: Experiment[] = [
@@ -11,5 +12,6 @@ export const EXPERIMENTS: Experiment[] = [
         title: "Performance Optimization",
         image: "/images/Scaling.webp",
         href: "https://github.com/Amit-Mahato-0001/Scaling-API",
+        ambient: "from-[#68BE2A]",
     },
 ];
