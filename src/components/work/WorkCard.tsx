@@ -48,7 +48,7 @@ const WorkCard = ({ project }: WorkCardProps) => {
 
           </div>
 
-        </div>
+        </div> 
 
       </div>
 
