@@ -8,50 +8,101 @@ const WorkCard = ({ project }: WorkCardProps) => {
   const { title, image, href, ambient } = project
 
   return (
-    <a href={href} className="group block w-full">
-
-      {/* Card Container */}
-      <div className="relative overflow-hidden rounded-2xl border border-white/10 p-2 sm:p-3 md:p-4">
-
-        {/* Dynamic Ambient Gradient */}
-        <div className="pointer-events-none absolute inset-0 opacity-0 transition-all duration-500 group-hover:opacity-100 z-0">
+    <a
+      href={href}
+      className="group block w-full"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {/* Card */}
+      <div
+        className="
+          relative overflow-hidden
+          rounded-[18px]
+          border border-white/10
+          bg-white/[0.03]
+          p-2 sm:p-2.5 md:p-3
+          transition-all duration-300
+        "
+      >
+        {/* Ambient Glow */}
+        <div className="pointer-events-none absolute inset-0 z-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
           <div
-            className={`absolute inset-x-0 top-0 h-[40px] bg-gradient-to-b ${ambient} to-transparent blur-2xl`}
+            className={`absolute inset-x-0 top-0 h-32 bg-gradient-to-b ${ambient} to-transparent blur-3xl`}
           />
         </div>
 
-        {/* Image wrapper */}
-        <div className="relative z-10 overflow-hidden rounded-xl">
+        {/* Image Wrapper */}
+        <div className="relative z-10 overflow-hidden rounded-[14px]">
 
           {/* Image */}
           <img
             src={image}
             alt={title}
-            className="w-full h-full object-cover opacity-[80%]"
+            className="
+              w-full
+              object-cover
+              opacity-80
+              transition-all duration-500
+              group-hover:opacity-100
+            "
           />
 
-          {/* Bottom Gradient */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[70%] bg-gradient-to-t from-[#0b0b0b] via-[#0b0b0b]/80 to-transparent" />
+          {/* Bottom Overlay */}
+          <div
+            className="
+              pointer-events-none
+              absolute inset-x-0 bottom-0
+              h-[75%]
+              bg-gradient-to-t
+              from-black
+              via-black/70
+              to-transparent
+            "
+          />
 
           {/* Content */}
-          <div className="absolute bottom-0 left-0 p-3 sm:p-4 md:p-5">
+          <div
+            className="
+              absolute bottom-0 left-0
+              p-2.5 sm:p-3 md:p-4
+            "
+          >
+            <div
+              className="
+                flex items-center gap-2
+                rounded-full
+                border border-white/10
+                bg-white/10
+                px-3 py-1.5
+                backdrop-blur-md
+              "
+            >
+              {/* Dot */}
+              <span
+                className="
+                  h-2 w-2 rounded-full
+                  bg-[var(--color-muted)]
+                  transition-transform duration-300
+                  group-hover:scale-125
+                "
+              />
 
-            <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 backdrop-blur-sm w-fit">
-
-              <span className="h-2 w-2 rounded-full bg-[var(--color-muted)] transition-all duration-300 group-hover:scale-140"/>
-
-              <h3 className="text-base font-medium leading-tight text-[var(--color-muted)] sm:text-l md:text-l">
+              {/* Title */}
+              <h3
+                className="
+                  text-sm sm:text-base
+                  font-medium
+                  text-[var(--color-muted)]
+                  leading-none
+                "
+              >
                 {title}
               </h3>
-
             </div>
-
           </div>
-
-        </div> 
-
+        </div>
       </div>
-
     </a>
   )
 }
