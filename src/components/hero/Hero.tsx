@@ -14,15 +14,11 @@ const techStack = [
   { name: "Redis", icon: "/icons/Redis.svg" },
 ];
 
-// duplicate for seamless loop
-const duplicatedStack = [...techStack, ...techStack]
-
 const Hero = () => {
   const [isHover, setIsHover] = useState(false)
 
   // preload gif
   useEffect(() => {
-
 
     const gif = new Image()
     gif.src = "/images/welcome.gif"
@@ -52,21 +48,30 @@ const Hero = () => {
 
         <div className="mt-10 w-full overflow-hidden py-4">
 
-          <div className="flex w-max animate-marquee gap-12">
+          <div className="animate-marquee flex w-max">
 
-            {duplicatedStack.map((tech, index) => (
-
+            {[0, 1].map((setIndex) => (
               <div
-                key={`${tech.name}-${index}`}
-                className="flex items-center justify-center"
+                key={setIndex}
+                className="flex shrink-0 items-center gap-12 pr-12"
+                aria-hidden={setIndex === 1}
               >
-                <img
-                  src={tech.icon}
-                  alt={tech.name}
-                  className="h-8 w-8 object-contain"
-                />
-              </div>
+                {techStack.map((tech) => (
 
+                  <div
+                    key={`${tech.name}-${setIndex}`}
+                    className="flex items-center justify-center"
+                  >
+                    <img
+                      src={tech.icon}
+                      alt={setIndex === 0 ? tech.name : ""}
+                      className="h-8 w-8 object-contain"
+                      loading="eager"
+                    />
+                  </div>
+
+                ))}
+              </div>
             ))}
 
           </div>
