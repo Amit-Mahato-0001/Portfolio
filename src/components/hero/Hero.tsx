@@ -24,7 +24,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className="flex min-h-[50dvh] items-center px-4">
+    <section className="flex min-h-[40dvh] items-center px-4">
       <div className="w-full max-w-6xl overflow-hidden">
         
         <img

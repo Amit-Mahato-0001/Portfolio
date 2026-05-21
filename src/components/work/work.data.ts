@@ -10,7 +10,7 @@ export const WORK_PROJECTS: WorkProject[] = [
     
     {
         id: "work01",
-        title: "ManageInSync",
+        title: "Multi-Tenant Agency Os",
         image: "/images/ManageInSync.webp",
         href: "https://github.com/Amit-Mahato-0001/ManageInSync",
         ambient: "from-blue-500"
@@ -18,7 +18,7 @@ export const WORK_PROJECTS: WorkProject[] = [
 
     {
         id: "work02",
-        title: "Pixelva",
+        title: "Chrome extension",
         image: "/images/Pixelva.webp",
         href: "https://microsoftedge.microsoft.com/addons/detail/ofhbnipkjmikfpfiggnllhfgadlpobnf",
         ambient: "from-white",
