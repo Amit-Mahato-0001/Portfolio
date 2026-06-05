@@ -15,18 +15,17 @@ const techStack = [
 ];
 
 const Hero = () => {
-  const [isHover, setIsHover] = useState(false)
+  const [isHover, setIsHover] = useState(false);
 
   // preload gif
   useEffect(() => {
-    const gif = new Image()
-    gif.src = "/images/welcome.gif"
-  }, [])
+    const gif = new Image();
+    gif.src = "/images/welcome.gif";
+  }, []);
 
   return (
     <section className="flex min-h-[40dvh] items-center px-4">
       <div className="w-full max-w-6xl overflow-hidden">
-        
         <img
           src={isHover ? "/images/welcome.gif" : "/images/Amit.jpeg"}
           alt="Amit Kumar Mahato"
@@ -39,27 +38,22 @@ const Hero = () => {
           Namaste, I'm Amit Kr. Mahato.
         </h1>
 
-        <p className="mt-2 max-w-3xl text-lg leading-relaxed text-[var(--color-muted)]">
-          I build scalable backend systems using{" "}
-          <span className="font-bold text-white">Node.js</span>,{" "}
-          <span className="font-bold text-white">Express.js</span>,{" "}
-          <span className="font-bold text-white">MongoDB</span>,{" "}
-          <span className="font-bold text-white">Redis</span>,{" "}
-          <span className="font-bold text-white">Docker</span>,{" "}
-          <span className="font-bold text-white">Docker Compose</span>,{" "}
-          <span className="font-bold text-white">
-            GitHub Actions CI/CD
-          </span>,{" "}
-          and <span className="font-bold text-white">NGINX</span>, while
-          developing modern frontend applications with{" "}
-          <span className="font-bold text-white">React</span>,{" "}
-          <span className="font-bold text-white">Redux</span>, and{" "}
-          <span className="font-bold text-white">Tailwind CSS</span>.
+        <p className="mt-2 max-w-4xl text-lg leading-relaxed text-[var(--color-muted)]">
+          A developer interested in the problems that appear only after software
+          succeeds. Working across
+          <span className="font-bold text-white"> Node.js</span>,
+          <span className="font-bold text-white"> Express.js</span>,
+          <span className="font-bold text-white"> MongoDB</span>,
+          <span className="font-bold text-white"> Redis</span>,
+          <span className="font-bold text-white"> Docker</span>,
+          <span className="font-bold text-white"> AWS</span>,
+          <span className="font-bold text-white"> React</span>, and
+          <span className="font-bold text-white"> TypeScript</span>, with a
+          focus on scalability, performance, and production-grade systems.
         </p>
 
         <div className="mt-10 w-full overflow-hidden py-4">
           <div className="animate-marquee flex w-max">
-            
             {[0, 1].map((setIndex) => (
               <div
                 key={setIndex}
@@ -81,12 +75,11 @@ const Hero = () => {
                 ))}
               </div>
             ))}
-
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

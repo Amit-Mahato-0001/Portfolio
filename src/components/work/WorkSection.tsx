@@ -7,7 +7,7 @@ const WorkSection = () => {
         <section id="work" >
             <div className="mx-auto max-w-6xl">
                 
-                <h2 className="px-4 py-6 text-lg font-medium uppercase tracking-widest text-[var(--color-muted)] ">
+                <h2 className="px-4 py-6 text-lg font-medium uppercase tracking-widest text-[var(--color-foreground)] ">
                     Works
                 </h2>
 
